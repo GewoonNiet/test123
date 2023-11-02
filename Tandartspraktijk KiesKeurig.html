@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tandartsafspraak</title>
+</head>
+<body>
+    <h1>Tandartsafspraak</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis quam eu urna malesuada rhoncus.</p>
+    
+    <img src="https://www.dentalclinics.nl/wp-content/uploads/2018/12/DC-Zoetermeer-Seghwaert-21-12-2022-32.jpg" alt="Tandartsen" style="width: 300px;">
+    <img src="https://www.dentista-magazine.nl/images/01_TEAM/Team_in_beeld/2020/202111020004_Team_van_Tandartsen_Zijlweg_1.jpg" alt="Het Team" style="width: 300px;">
+    <img src="https://heemskerktandartsen.nl/wp-content/uploads/2021/04/Heemskerk-tandartsen.jpg" alt="afspraak" style="width: 300px;">
+
+    <form action="https://formspree.io/f/moqoyojr" method="POST">
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required>
+            <br>
+            <label for="mailadres">Mailadres:</label>
+            <input type="email" id="mailadres" name="mailadres" required>
+            <br>
+            <label for="telefoonnummer">Telefoonnummer:</label>
+            <input type="tel" id="telefoonnummer" name="telefoonnummer" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Beschrijving van de klachten</legend>
+            <p>Klachten:</p>
+            <input type="checkbox" id="klacht1" name="klachten" value="Hoofdpijn">
+            <label for="klacht1">Hoofdpijn</label><br>
+            <input type="checkbox" id="klacht2" name="klachten" value="Buikpijn">
+            <label for="klacht2">Buikpijn</label><br>
+
+            <p>Fotobestand uploaden:</p>
+            <input type="file" id="foto" name="foto" accept="image/*">
+        </fieldset>
+
+        <fieldset>
+            <legend>Toelichting van de klachten</legend>
+            <label for="toelichting">Toelichting (max 1500 tekens):</label>
+            <textarea id="toelichting" name="toelichting" rows="5" maxlength="1500" required></textarea>
+
+            <label for="datum">Datum van afspraak:</label>
+            <input type="date" id="datum" name="datum" required>
+        </fieldset>
+
+        <input type="submit" value="Afspraak maken">
+    </form>
+</body>
+</html>
